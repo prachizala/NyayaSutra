@@ -1,0 +1,142 @@
+[
+  {
+    "ipc_section": "420",
+    "bns_section": "318",
+    "offense_name": "Cheating and dishonestly inducing delivery of property",
+    "chapter": "Chapter XVII - Of Offences Against Property",
+    "bailable": false,
+    "cognizable": true,
+    "punishment": "Imprisonment up to 7 years and fine",
+    "simplified_summary": {
+      "en": "Cheating or financial fraud against someone to dishonestly obtain money or property.",
+      "hi": "धोखाधड़ी या बेईमानी से किसी की संपत्ति या पैसे हड़पने का अपराध।",
+      "gu": "છેતરપિંડી અથવા અપ્રમાણિકપણે કોઈની મિલકત કે પૈસા પડાવી લેવાનો ગુનો."
+    }
+  },
+  {
+    "ipc_section": "302",
+    "bns_section": "103",
+    "offense_name": "Punishment for Murder",
+    "chapter": "Chapter VI - Of Offences Affecting the Human Body",
+    "bailable": false,
+    "cognizable": true,
+    "punishment": "Death or imprisonment for life, and fine",
+    "simplified_summary": {
+      "en": "Causing intentional death of a person.",
+      "hi": "हत्या (कत्ल) का गंभीर अपराध।",
+      "gu": "કોઈ વ્યક્તિની ઈરાદાપૂર્વક હત્યા કરવાનો ગુનો."
+    }
+  },
+  {
+    "ipc_section": "378",
+    "bns_section": "303",
+    "offense_name": "Theft",
+    "chapter": "Chapter XVII - Of Offences Against Property",
+    "bailable": false,
+    "cognizable": true,
+    "punishment": "Imprisonment up to 3 years, or fine, or both",
+    "simplified_summary": {
+      "en": "Taking movable property out of possession without consent.",
+      "hi": "चोरी का अपराध (बिना अनुमति किसी की चल संपत्ति ले जाना)।",
+      "gu": "ચોરીનો ગુનો (પરવાનગી વગર કોઈની વસ્તુ લઈ લેવી)."
+    }
+  },
+  {
+    "ipc_section": "498A",
+    "bns_section": "85",
+    "offense_name": "Husband or relative of husband subjecting woman to cruelty",
+    "chapter": "Chapter V - Of Offences Against Women and Children",
+    "bailable": false,
+    "cognizable": true,
+    "punishment": "Imprisonment up to 3 years and fine",
+    "simplified_summary": {
+      "en": "Domestic cruelty and harassment of a woman by husband or in-laws.",
+      "hi": "पति या उसके रिश्तेदारों द्वारा महिला पर घरेलू क्रूरता और प्रताड़ना।",
+      "gu": "પતિ અથવા સાસરિયાઓ દ્વારા સ્ત્રી પર માનસિક કે શારીરિક ત્રાસ."
+    }
+  },
+  {
+    "ipc_section": "506",
+    "bns_section": "351",
+    "offense_name": "Criminal Intimidation",
+    "chapter": "Chapter XIX - Of Criminal Intimidation, Insult and Annoyance",
+    "bailable": true,
+    "cognizable": false,
+    "punishment": "Imprisonment up to 2 years, or fine, or both",
+    "simplified_summary": {
+      "en": "Threatening injury to person, reputation, or property.",
+      "hi": "जान से मारने या नुकसान पहुँचाने की धमकी देना (आपराधिक धमकी)।",
+      "gu": "જાનથી મારી નાખવાની કે નુકસાન પહોંચાડવાની ધમકી આપવી."
+    }
+  },
+  {
+    "ipc_section": "441",
+    "bns_section": "329",
+    "offense_name": "Criminal Trespass (Land / Property encroachment)",
+    "chapter": "Chapter XVII - Of Offences Against Property",
+    "bailable": true,
+    "cognizable": false,
+    "punishment": "Imprisonment up to 3 months, or fine up to 5,000 INR, or both",
+    "simplified_summary": {
+      "en": "Entering someone's land or property unlawfully to commit an offense or intimidate.",
+      "hi": "किसी की ज़मीन या मकान पर अवैध कब्ज़ा या बिना अनुमति घुसपैठ करना।",
+      "gu": "કોઈની જમીન કે મકાનમાં ગેરકાયદેસર રીતે ઘૂસી જવું કે કબજો કરવાનો પ્રયાસ."
+    }
+  },
+  {
+    "ipc_section": "354",
+    "bns_section": "74",
+    "offense_name": "Assault or criminal force to woman with intent to outrage her modesty",
+    "chapter": "Chapter V - Of Offences Against Women and Children",
+    "bailable": false,
+    "cognizable": true,
+    "punishment": "Imprisonment 1 to 5 years and fine",
+    "simplified_summary": {
+      "en": "Assaulting or using criminal force against a woman intending to outrage her modesty.",
+      "hi": "किसी महिला की गरिमा और लज्जा भंग करने के इरादे से हमला करना।",
+      "gu": "સ્ત્રીની ગરિમા અને છેડતી કરવાના ઇરાદે હુમલો અથવા બળજબરી કરવી."
+    }
+  },
+  {
+    "ipc_section": "279",
+    "bns_section": "281",
+    "offense_name": "Rash driving or riding on a public way",
+    "chapter": "Chapter XV - Of Offences Affecting Public Health, Safety, Convenience",
+    "bailable": true,
+    "cognizable": true,
+    "punishment": "Imprisonment up to 6 months, or fine up to 1,000 INR, or both",
+    "simplified_summary": {
+      "en": "Reckless, dangerous driving on public roads endangering human life.",
+      "hi": "सार्वजनिक सड़क पर तेज़ गति और लापरवाही से गाड़ी चलाना जिससे जान का खतरा हो।",
+      "gu": "જાહેર રસ્તા પર બેદરકારીપૂર્વક વાહન ચલાવી માનવ જીવન જોખમમાં મૂકવું."
+    }
+  },
+  {
+    "ipc_section": "323",
+    "bns_section": "115",
+    "offense_name": "Punishment for voluntarily causing hurt",
+    "chapter": "Chapter VI - Of Offences Affecting the Human Body",
+    "bailable": true,
+    "cognizable": false,
+    "punishment": "Imprisonment up to 1 year, or fine up to 1,000 INR, or both",
+    "simplified_summary": {
+      "en": "Voluntarily causing physical hurt or injury to any person.",
+      "hi": "जानबूझकर किसी को शारीरिक चोट या नुकसान पहुँचाना।",
+      "gu": "સ્વેચ્છાએ કોઈ વ્યક્તિને શારીરિક ઈજા કે માર મારવો."
+    }
+  },
+  {
+    "ipc_section": "120B",
+    "bns_section": "61",
+    "offense_name": "Criminal Conspiracy",
+    "chapter": "Chapter IV - Of Abetment, Criminal Conspiracy and Attempt",
+    "bailable": false,
+    "cognizable": true,
+    "punishment": "Same as for abetment of the committed offense",
+    "simplified_summary": {
+      "en": "Agreement between two or more persons to commit an illegal act.",
+      "hi": "दो या दो से अधिक लोगों द्वारा मिलकर कोई अपराध करने की साज़िश रचना।",
+      "gu": "બે કે તેથી વધુ વ્યક્તિઓ દ્વારા ગેરકાયદેસર કાવતરું ઘડવું."
+    }
+  }
+]
