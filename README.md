@@ -90,8 +90,8 @@ NyayaSutra provides informational analysis, translation, and automated administr
 
 ---
 
-## 👩‍💻 Author & Leadership
+## 👩‍💻 Author & Engineering
 
 **Prachi Zala**  
-*Full Stack Developer & Founder, NyayaSutra*  
+*Full Stack Developer*  
 GitHub: [@prachizala](https://github.com/prachizala) • [LinkedIn](https://www.linkedin.com/in/prachi-zala-74a08b334/)
