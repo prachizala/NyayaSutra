@@ -3,6 +3,7 @@ Core Pydantic models for NyayaSutra.
 """
 
 from enum import Enum
+
 from pydantic import BaseModel, Field
 
 

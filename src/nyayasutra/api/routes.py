@@ -4,9 +4,10 @@ FastAPI Endpoints for NyayaSutra Citizen Intelligence Suite.
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+
+from nyayasutra.bns_engine.concordance import BNSKnowledgeEngine
 from nyayasutra.core.config import settings
 from nyayasutra.core.models import LegalDocumentQuery, LegalSummaryResponse
-from nyayasutra.bns_engine.concordance import BNSKnowledgeEngine
 from nyayasutra.drafting.templates import LegalDraftingEngine
 from nyayasutra.voice.assistant import VoiceAssistantBridge
 

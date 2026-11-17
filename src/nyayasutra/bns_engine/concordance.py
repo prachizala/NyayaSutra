@@ -2,7 +2,7 @@
 BNS (Bharatiya Nyaya Sanhita 2023) Knowledge Database & IPC Concordance Engine.
 """
 
-from typing import Optional
+
 from nyayasutra.core.models import LawMapping
 
 # Comprehensive foundational concordance mappings between Indian Penal Code (1860)
@@ -94,11 +94,11 @@ class BNSKnowledgeEngine:
             m.bns_section.strip().upper(): m for m in CONCORDANCE_REGISTRY
         }
 
-    def find_by_ipc(self, ipc_section: str) -> Optional[LawMapping]:
+    def find_by_ipc(self, ipc_section: str) -> LawMapping | None:
         cleaned = ipc_section.strip().upper().replace("SECTION", "").replace("SEC", "").strip()
         return self._ipc_lookup.get(cleaned)
 
-    def find_by_bns(self, bns_section: str) -> Optional[LawMapping]:
+    def find_by_bns(self, bns_section: str) -> LawMapping | None:
         cleaned = bns_section.strip().upper().replace("SECTION", "").replace("SEC", "").strip()
         return self._bns_lookup.get(cleaned)
 
@@ -116,9 +116,8 @@ class BNSKnowledgeEngine:
                 f"कलम {ipc_sec.lower()}",
                 f"धारा {ipc_sec.lower()}"
             ]
-            if any(p in lower_text for p in patterns):
-                if mapping not in matches:
-                    matches.append(mapping)
+            if any(p in lower_text for p in patterns) and mapping not in matches:
+                matches.append(mapping)
 
         for bns_sec, mapping in self._bns_lookup.items():
             patterns = [
@@ -127,8 +126,7 @@ class BNSKnowledgeEngine:
                 f"ન્યાય સંહિતા {bns_sec.lower()}",
                 f"न्याय संहिता {bns_sec.lower()}"
             ]
-            if any(p in lower_text for p in patterns):
-                if mapping not in matches:
-                    matches.append(mapping)
+            if any(p in lower_text for p in patterns) and mapping not in matches:
+                matches.append(mapping)
 
         return matches

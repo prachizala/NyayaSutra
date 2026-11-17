@@ -2,19 +2,19 @@
 WhatsApp Cloud API Webhook Handler & Citizen Inbound Message Pipeline.
 """
 
-from typing import Optional
+
 from pydantic import BaseModel, Field
 
 
 class WhatsAppMessageContact(BaseModel):
     wa_id: str
-    name: Optional[str] = None
+    name: str | None = None
 
 
 class WhatsAppMedia(BaseModel):
     id: str
     mime_type: str
-    sha256: Optional[str] = None
+    sha256: str | None = None
 
 
 class WhatsAppInboundMessage(BaseModel):
@@ -22,8 +22,8 @@ class WhatsAppInboundMessage(BaseModel):
     id: str
     timestamp: str
     type: str  # "text", "audio", "image", "document"
-    text_body: Optional[str] = None
-    media: Optional[WhatsAppMedia] = None
+    text_body: str | None = None
+    media: WhatsAppMedia | None = None
 
 
 class WhatsAppWebhookDispatcher:

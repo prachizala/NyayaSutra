@@ -2,15 +2,16 @@
 Gemini Multimodal Vision & Legal Document OCR Ingestion Engine.
 """
 
-from typing import Optional
+
 import httpx
+
 from nyayasutra.core.config import settings
 
 
 class MultimodalDocumentIngestor:
     """Ingests scanned images (FIRs, 7/12 Satbara, court summons) and extracts structured legal text."""
 
-    def __init__(self, api_key: Optional[str] = None):
+    def __init__(self, api_key: str | None = None):
         self.api_key = api_key or settings.gemini_api_key
         self.base_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
 

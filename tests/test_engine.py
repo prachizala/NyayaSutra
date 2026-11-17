@@ -2,11 +2,10 @@
 Unit tests for NyayaSutra BNS Concordance & Legal Analysis Engine.
 """
 
-import pytest
 from nyayasutra.bns_engine.concordance import BNSKnowledgeEngine
+from nyayasutra.core.models import LanguageCode
 from nyayasutra.drafting.templates import LegalDraftingEngine
 from nyayasutra.voice.assistant import VoiceAssistantBridge
-from nyayasutra.core.models import LanguageCode
 
 
 def test_bns_engine_direct_lookup():

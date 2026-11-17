@@ -3,8 +3,9 @@ Unit tests for Multimodal Ingestion and WhatsApp Dispatcher.
 """
 
 import pytest
-from nyayasutra.core.ingestion import MultimodalDocumentIngestor
+
 from nyayasutra.api.whatsapp import WhatsAppWebhookDispatcher
+from nyayasutra.core.ingestion import MultimodalDocumentIngestor
 
 
 def test_gemini_payload_construction():
