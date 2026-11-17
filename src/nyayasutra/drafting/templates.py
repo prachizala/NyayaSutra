@@ -13,21 +13,21 @@ except ImportError:
 
 LAND_ENCROACHMENT_NOTICE_TEMPLATE = """
 LEGAL NOTICE / FORMAL COMPLAINT (ચેતવણી / ઔપચારિક નોટિસ)
-Date / તારીખ: {date}
-Place / સ્થળ: {place}
+Date / તારીખ: {{ date }}
+Place / સ્થળ: {{ place }}
 
 TO / પ્રતિ:
-{encroacher_name}
-{encroacher_address}
+{{ encroacher_name }}
+{{ encroacher_address }}
 
-SUBJECT: Immediate cessation of unlawful encroachment and trespass on Survey No. / Land Record: {land_survey_number}
+SUBJECT: Immediate cessation of unlawful encroachment and trespass on Survey No. / Land Record: {{ land_survey_number }}
 
 Dear Sir / Madam,
 
-Under instructions from and on behalf of my client / lawful occupant: {applicant_name}, resident of {applicant_address}, I hereby bring the following facts to your urgent notice:
+Under instructions from and on behalf of my client / lawful occupant: {{ applicant_name }}, resident of {{ applicant_address }}, I hereby bring the following facts to your urgent notice:
 
-1. My client is the absolute lawful owner and title-holder of agricultural/residential land registered under Survey/Account No. {land_survey_number} in {village_district}.
-2. It has been observed that since {incident_date}, you and your associates have unlawfully attempted to encroach, alter boundaries, and trespass upon the aforementioned property without any legal entitlement.
+1. My client is the absolute lawful owner and title-holder of agricultural/residential land registered under Survey/Account No. {{ land_survey_number }} in {{ village_district }}.
+2. It has been observed that since {{ incident_date }}, you and your associates have unlawfully attempted to encroach, alter boundaries, and trespass upon the aforementioned property without any legal entitlement.
 3. Your acts constitute punishable offenses under Section 329 of the Bharatiya Nyaya Sanhita (BNS 2023) [erstwhile Section 441 of the Indian Penal Code (IPC)], along with criminal intimidation under Section 351 of BNS 2023.
 
 DEMAND:
@@ -36,8 +36,8 @@ You are hereby called upon to forthwith remove all unauthorized materials, cease
 Yours faithfully,
 
 _____________________________
-{applicant_name} / Authorized Signatory
-Contact: {applicant_contact}
+{{ applicant_name }} / Authorized Signatory
+Contact: {{ applicant_contact }}
 """
 
 
@@ -73,4 +73,9 @@ class LegalDraftingEngine:
         }
         if HAS_JINJA:
             return Template(self._raw_template).render(**ctx)
-        return self._raw_template.format(**ctx)
+        
+        # Safe fallback without Jinja2
+        rendered = self._raw_template
+        for k, v in ctx.items():
+            rendered = rendered.replace(f"{{{{ {k} }}}}", str(v))
+        return rendered
