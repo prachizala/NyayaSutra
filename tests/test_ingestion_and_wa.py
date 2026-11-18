@@ -10,8 +10,10 @@ from nyayasutra.core.ingestion import MultimodalDocumentIngestor
 
 def test_gemini_payload_construction():
     ingestor = MultimodalDocumentIngestor(api_key="mock_key")
-    payload = ingestor.construct_payload(base64_image="aGVsbG8=", mime_type="image/jpeg", target_lang="gu")
-    
+    payload = ingestor.construct_payload(
+        base64_image="aGVsbG8=", mime_type="image/jpeg", target_lang="gu"
+    )
+
     assert "contents" in payload
     assert payload["contents"][0]["parts"][1]["inline_data"]["data"] == "aGVsbG8="
     assert "generationConfig" in payload
@@ -39,7 +41,7 @@ def test_whatsapp_webhook_parser():
                                     "id": "wamid.HBgL...",
                                     "timestamp": "1731800000",
                                     "type": "text",
-                                    "text": {"body": "મારી જમીનનો સાતબારા તપાસો"}
+                                    "text": {"body": "મારી જમીનનો સાતબારા તપાસો"},
                                 }
                             ]
                         }

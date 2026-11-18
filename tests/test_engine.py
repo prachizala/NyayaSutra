@@ -10,7 +10,7 @@ from nyayasutra.voice.assistant import VoiceAssistantBridge
 
 def test_bns_engine_direct_lookup():
     engine = BNSKnowledgeEngine()
-    
+
     # IPC 420 -> BNS 318
     mapping_420 = engine.find_by_ipc("420")
     assert mapping_420 is not None
@@ -26,7 +26,7 @@ def test_bns_engine_direct_lookup():
 
 def test_scan_text_for_laws():
     engine = BNSKnowledgeEngine()
-    
+
     sample_fir = "આરોપી વિરુદ્ધ IPC 420 અને IPC 506 મુજબ ગુનો નોંધવામાં આવ્યો છે."
     matches = engine.scan_text_for_laws(sample_fir)
     assert len(matches) >= 2
@@ -45,7 +45,7 @@ def test_legal_drafting_engine():
         encroacher_address="Gam: Sanand",
         land_survey_number="Survey No. 402/1",
         village_district="Sanand, Ahmedabad",
-        incident_date="10-11-2026"
+        incident_date="10-11-2026",
     )
     assert "Rameshbhai Patel" in notice
     assert "Survey No. 402/1" in notice
