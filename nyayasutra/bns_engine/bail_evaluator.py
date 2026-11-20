@@ -1,10 +1,12 @@
 """Statutory bail eligibility evaluator under Bharatiya Nagarik Suraksha Sanhita (BNSS)."""
 
+from typing import ClassVar
+
 
 class BailEligibilityEvaluator:
     """Evaluates bail eligibility and bailable thresholds for BNS statutory offenses."""
 
-    NON_BAILABLE_SECTIONS = {318, 329, 303, 304}
+    NON_BAILABLE_SECTIONS: ClassVar[set[int]] = {318, 329, 303, 304}
 
     @classmethod
     def is_bailable(cls, bns_section: int) -> bool:
