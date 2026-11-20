@@ -1,10 +1,12 @@
 """Gujarati and Hindi vernacular legal term normalization engine."""
 
+from typing import ClassVar
+
 
 class VernacularLegalNormalizer:
     """Normalizes Gujarati revenue terminology into standardized legal terms."""
 
-    GLOSSARY_MAP = {
+    GLOSSARY_MAP: ClassVar[dict[str, str]] = {
         "satbara": "Record of Rights (Form 7/12)",
         "pedhinamu": "Family Tree Pedigree Certificate",
         "dastavej": "Registered Sale Deed",
