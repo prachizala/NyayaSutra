@@ -1,6 +1,6 @@
 """Statutory legal notice generator for Negotiable Instruments Act dishonour of cheque."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 class NIActNoticeBuilder:
@@ -25,5 +25,5 @@ class NIActNoticeBuilder:
             "amount_inr": amount_inr,
             "dishonour_reason": "Funds Insufficient",
             "demand_timeline_days": 15,
-            "generated_at": datetime.utcnow().isoformat(),
+            "generated_at": datetime.now(timezone.utc).isoformat(),
         }
